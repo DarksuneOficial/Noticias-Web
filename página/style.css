@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #e6e68f;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+tr:hover {
+  background: #f0f0f0;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+}
+.card {
+  flex: 0 0 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  scroll-snap-align: center;
+  transition: transform 0.3s;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card:hover {
+  transform: scale(1.05);
+  background: #f9f9f9;
+}
+
+footer {
+  background: #e6e68f;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  padding: 50px;
+}
+.noticia-contenido img {
+    max-width: 300px;
+    float: right;
+    margin: 10px;
+}
+.noticia-contenido::after { 
+  content: ""; 
+  display: block; 
+  clear: both; 
+}
